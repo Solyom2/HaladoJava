@@ -2,7 +2,7 @@ package hu.me;
 
 public class Kimenet {
 
-    private int eredmeny;
+    private double eredmeny;
     private String uzenet;
     private int hibakod;
 
@@ -12,28 +12,28 @@ public class Kimenet {
         this.hibakod = 0;
     }
 
-    public void setEredmeny(int eredmeny) {
-        this.eredmeny = eredmeny;
-    }
-
-    public void setUzenet(String uzenet) {
-        this.uzenet = uzenet;
-    }
-
-    public void setHibakod(int hibakod) {
-        this.hibakod = hibakod;
-    }
-
-    public int getEredmeny() {
+    public double getEredmeny() {
         return eredmeny;
+    }
+
+    public void setEredmeny(double eredmeny) {
+        this.eredmeny = eredmeny;
     }
 
     public String getUzenet() {
         return uzenet;
     }
 
+    public void setUzenet(String uzenet) {
+        this.uzenet = uzenet;
+    }
+
     public int getHibakod() {
         return hibakod;
+    }
+
+    public void setHibakod(int hibakod) {
+        this.hibakod = hibakod;
     }
 
     @Override

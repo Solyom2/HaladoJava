@@ -18,7 +18,7 @@ public class JSONMapper {
             Bemenet bemenet = objectMapper.readValue(jsonData, Bemenet.class);
 
             Kimenet kimenet = new Kimenet();
-            int eredmeny = 0;
+            double eredmeny = 0;
             try {
                 eredmeny = calculate(bemenet);
                 kimenet.setEredmeny(eredmeny);
@@ -35,7 +35,7 @@ public class JSONMapper {
 
     public void calculateByConsole() {
         Scanner scanner = new Scanner(System.in);
-        int a, b, eredmeny = 0;
+        double a, b, eredmeny = 0;
         String operacio;
         boolean wrong = true;
 
@@ -72,9 +72,9 @@ public class JSONMapper {
         writeJSON(kimenet);
     }
 
-    public int calculate(Bemenet bemenet) {
-        int eredmeny = 0;
-        int[] operandusok = bemenet.getOperandusok();
+    public double calculate(Bemenet bemenet) {
+        double eredmeny = 0;
+        double[] operandusok = bemenet.getOperandusok();
         Szamologep szamologep = new Szamologep();
 
         if(bemenet.getMuvelet().equals("osszeadas")) {

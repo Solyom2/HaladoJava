@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Bemenet {
 
     private String muvelet;
-    private int[] operandusok;
+    private double[] operandusok;
 
     public String getMuvelet() {
         return muvelet;
@@ -15,11 +15,11 @@ public class Bemenet {
         this.muvelet = muvelet;
     }
 
-    public int[] getOperandusok() {
+    public double[] getOperandusok() {
         return operandusok;
     }
 
-    public void setOperandusok(int[] operandusok) {
+    public void setOperandusok(double[] operandusok) {
         this.operandusok = operandusok;
     }
 

@@ -4,12 +4,12 @@ public class Kimenet {
 
     private double eredmeny;
     private String uzenet;
-    private int hibakod;
+    private Hibakod hibakod;
 
     public Kimenet() {
         this.eredmeny = 0;
         this.uzenet = "nincs";
-        this.hibakod = 0;
+        this.hibakod = Hibakod.NINCS;
     }
 
     public double getEredmeny() {
@@ -28,11 +28,11 @@ public class Kimenet {
         this.uzenet = uzenet;
     }
 
-    public int getHibakod() {
+    public Hibakod getHibakod() {
         return hibakod;
     }
 
-    public void setHibakod(int hibakod) {
+    public void setHibakod(Hibakod hibakod) {
         this.hibakod = hibakod;
     }
 

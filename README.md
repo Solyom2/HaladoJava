@@ -1,2 +1,2 @@
 # HaladoJava University Miskolc
-First lesson
+Calculator Interface project original repository: https://github.com/Solyom2/JSONCalculator

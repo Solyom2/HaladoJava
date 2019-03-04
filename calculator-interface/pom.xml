@@ -13,6 +13,8 @@
     <module>object-mapper-interface</module>
     <module>logika</module>
     <module>logika-interface</module>
+      <module>auto-kolcsonzo</module>
+    <module>kolcsonzes</module>
   </modules>
 
   <name>calculator-interface</name>

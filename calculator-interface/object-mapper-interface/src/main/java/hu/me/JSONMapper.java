@@ -10,24 +10,19 @@ import java.util.Scanner;
 
 public class JSONMapper {
 
+    private  Szamologep szamologep = new Szamologep();
+    private KeresFeldolgozo keresFeldolgozo = new KeresFeldolgozo(szamologep);
+
     public void calculateByJSON() {
 
         try{
             byte[] jsonData = Files.readAllBytes(Paths.get("bemenet.json"));
             ObjectMapper objectMapper = new ObjectMapper();
             Bemenet bemenet = objectMapper.readValue(jsonData, Bemenet.class);
+            Kimenet kimenet;
 
-            Kimenet kimenet = new Kimenet();
-            int eredmeny = 0;
-            try {
-                eredmeny = calculate(bemenet);
-                kimenet.setEredmeny(eredmeny);
-            }catch (Exception e) {
-                kimenet.setHibakod(1);
-                kimenet.setUzenet(e.getMessage());
-            }
+            kimenet = keresFeldolgozo.calculate(bemenet);
             writeJSON(kimenet);
-
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -35,61 +30,29 @@ public class JSONMapper {
 
     public void calculateByConsole() {
         Scanner scanner = new Scanner(System.in);
-        int a, b, eredmeny = 0;
+        double[] operandusok = new double[2];
         String operacio;
         boolean wrong = true;
 
         System.out.println("Add meg az 1. operandust: ");
-        a = scanner.nextInt();
+        operandusok[0] = scanner.nextInt();
         System.out.println("Add meg az 2. operandust: ");
-        b = scanner.nextInt();
+        operandusok[1] = scanner.nextInt();
         do {
-            System.out.println("Add meg az operációt(+,-,*,/): ");
+            System.out.println("Add meg az operációt: ");
             operacio = scanner.next();
-            if(operacio.equals("+") ||  operacio.equals("-") || operacio.equals("*") || operacio.equals("/")) wrong = false;
+            if(operacio.equals("osszeadas") ||  operacio.equals("kivonas") || operacio.equals("szorzas") || operacio.equals("osztas")) wrong = false;
         }while(wrong);
 
+        Bemenet bemenet = new Bemenet(operacio, operandusok);
         Kimenet kimenet = new Kimenet();
-        Szamologep szamologep = new Szamologep();
+
         try {
-            if(operacio.equals("+")) {
-                eredmeny = szamologep.osszeadas(a, b);
-            }
-            else if(operacio.equals("-")) {
-                eredmeny = szamologep.kivonas(a ,b);
-            }
-            else if(operacio.equals("*")) {
-                eredmeny = szamologep.szorzas(a, b);
-            }
-            else if(operacio.equals("/")) {
-                eredmeny = szamologep.osztas(a, b);
-            }
-            kimenet.setEredmeny(eredmeny);
+            kimenet = keresFeldolgozo.calculate(bemenet);
+            writeJSON(kimenet);
         }catch (Exception e) {
-            kimenet.setHibakod(1);
             kimenet.setUzenet(e.getMessage());
         }
-        writeJSON(kimenet);
-    }
-
-    public int calculate(Bemenet bemenet) {
-        int eredmeny = 0;
-        int[] operandusok = bemenet.getOperandusok();
-        Szamologep szamologep = new Szamologep();
-
-        if(bemenet.getMuvelet().equals("osszeadas")) {
-            eredmeny = szamologep.osszeadas(operandusok[0], operandusok[1]);
-        }
-        else if(bemenet.getMuvelet().equals("kivonas")) {
-            eredmeny = szamologep.osszeadas(operandusok[0], operandusok[1]);
-        }
-        else if(bemenet.getMuvelet().equals("szorzas")) {
-            eredmeny = szamologep.osszeadas(operandusok[0], operandusok[1]);
-        }
-        else if(bemenet.getMuvelet().equals("osztas")) {
-            eredmeny = szamologep.osszeadas(operandusok[0], operandusok[1]);
-        }
-        return eredmeny;
     }
 
     public void writeJSON(Kimenet kimenet) {

@@ -13,14 +13,17 @@ public class Main {
 
         do{
             System.out.println("1. Registration  2. Exit");
-            action = scanner.next();
+            action = scanner.nextLine();
 
             if(action.equals("1")) {
                 String userName, password;
                 System.out.println("Username: ");
-                userName = scanner.next();
+                userName = scanner.nextLine();
                 System.out.println("Password: ");
-                password = scanner.next();
+                password = scanner.nextLine();
+
+                System.out.println(userName);
+                System.out.println(password);
 
                 Controller controller = new Controller();
                 Registration registration = new Registration();

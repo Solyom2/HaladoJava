@@ -15,6 +15,7 @@ public class ControllerTest {
     private ArrayList<DataChecker> checkers;
     private NoSpaceChecker noSpaceChecker;
     private LengthChecker lengthChecker;
+    private ArrayList<ValidatorResponse> hibak;
 
     @Before
     public void setUp() {
@@ -26,6 +27,7 @@ public class ControllerTest {
         checkers = new ArrayList<>();
         checkers.add(lengthChecker);
         checkers.add(noSpaceChecker);
+        hibak = new ArrayList<>();
 
         registration = Mockito.mock(Registration.class);
         validator = Mockito.mock(Validator.class);
@@ -35,18 +37,14 @@ public class ControllerTest {
 
     @Test
     public void register_whenValidUser_thenReturnTrue() {
-        Mockito.when(lengthChecker.valid(validUser)).thenReturn(true);
-        Mockito.when(noSpaceChecker.valid(validUser)).thenReturn(true);
 
-        controller.register(validUser, checkers, registration, validator);
+        controller.register(validUser, checkers, registration, validator, hibak);
     }
 
     @Test
     public void register_whenInvalidUser_thenReturnFalse() {
-        Mockito.when(lengthChecker.valid(invalidUser)).thenReturn(false);
-        Mockito.when(noSpaceChecker.valid(invalidUser)).thenReturn(false);
 
-        controller.register(validUser, checkers, registration, validator);
+        controller.register(invalidUser, checkers, registration, validator, hibak);
     }
 
 }

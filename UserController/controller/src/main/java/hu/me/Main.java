@@ -22,9 +22,6 @@ public class Main {
                 System.out.println("Password: ");
                 password = scanner.nextLine();
 
-                System.out.println(userName);
-                System.out.println(password);
-
                 Controller controller = new Controller();
                 Registration registration = new Registration();
                 Validator validator = new Validator();
@@ -32,12 +29,13 @@ public class Main {
                 NoSpaceChecker noSpaceChecker = new NoSpaceChecker();
                 LengthChecker lengthChecker = new LengthChecker();
 
+                ArrayList<ValidatorResponse> hibak = new ArrayList<>();
                 ArrayList<DataChecker> checkers = new ArrayList<>();
                 checkers.add(noSpaceChecker);
                 checkers.add(lengthChecker);
 
                 User user = new User(userName, password);
-                controller.register(user, checkers, registration, validator);
+                controller.register(user, checkers, registration, validator, hibak);
             }
 
             else if(action.equals("2")) {

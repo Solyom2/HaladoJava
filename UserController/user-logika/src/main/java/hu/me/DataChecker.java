@@ -2,6 +2,6 @@ package hu.me;
 
 public interface DataChecker {
 
-    boolean valid(User user);
+    ValidatorResponse valid(User user);
 
 }

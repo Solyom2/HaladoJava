@@ -8,6 +8,7 @@ public class NoSpaceCheckerTest {
 
     private NoSpaceChecker noSpaceChecker;
     private User validUser, invalidUser, invalidUser2;
+    private ValidatorResponse validatorResponse;
 
     @Before
     public void setUp() {
@@ -19,17 +20,20 @@ public class NoSpaceCheckerTest {
 
     @Test
     public void validateLength_validUser_thenTrue() {
-        Assert.assertTrue(noSpaceChecker.valid(validUser));
+        validatorResponse = noSpaceChecker.valid(validUser);
+        Assert.assertTrue(validatorResponse.isValid());
     }
 
     @Test
     public void validateLength_invalidUser_thenFalse() {
-        Assert.assertFalse(noSpaceChecker.valid(invalidUser));
+        validatorResponse = noSpaceChecker.valid(invalidUser);
+        Assert.assertFalse(validatorResponse.isValid());
     }
 
     @Test
     public void validateLength_invalidUser2_thenFalse() {
-        Assert.assertFalse(noSpaceChecker.valid(invalidUser2));
+        validatorResponse = noSpaceChecker.valid(invalidUser2);
+        Assert.assertFalse(validatorResponse.isValid());
     }
 
 }

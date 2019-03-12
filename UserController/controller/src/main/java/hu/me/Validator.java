@@ -4,26 +4,27 @@ import java.util.ArrayList;
 
 public class Validator {
 
-    private ArrayList<Log> hibak = new ArrayList<>();
 
-    public boolean makeChecks(User user, ArrayList<DataChecker> checkers) {
-        boolean valid = true;
+    public boolean makeChecks(User user, ArrayList<DataChecker> checkers, ArrayList<ValidatorResponse> hibak) {
+
+        ValidatorResponse valid;
 
         for(DataChecker checker : checkers) {
             valid = checker.valid(user);
-
-            if(!valid) {
-                if(checker.getClass().getName().equals("LengthChecker")) {
-                    Log log = new Log(user, "Túl rövid felhasználónév vagy jelszó");
-                    hibak.add(log);
-                }
-                else if(checker.getClass().getName().equals("NoSpaceChecker")) {
-                    Log log = new Log(user, "Szóközt tartalmaz");
-                    hibak.add(log);
-                }
+            if(!valid.isValid()) {
+                hibak.add(valid);
             }
         }
-        return valid;
+
+        System.out.println("A hibák száma: " + hibak.size());
+        for(ValidatorResponse validatorResponse : hibak) {
+            System.out.println(validatorResponse.getError());
+        }
+
+        if(hibak.size() > 0) {
+            return false;
+        }
+        else return true;
     }
 
 }

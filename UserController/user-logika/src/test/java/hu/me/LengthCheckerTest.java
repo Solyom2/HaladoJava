@@ -8,6 +8,7 @@ public class LengthCheckerTest {
 
     private LengthChecker lengthChecker;
     private User validUser, invalidUser, invalidUser2;
+    private ValidatorResponse validatorResponse;
 
     @Before
     public void setUp() {
@@ -19,17 +20,20 @@ public class LengthCheckerTest {
 
     @Test
     public void validateLength_validUser_thenTrue() {
-        Assert.assertTrue(lengthChecker.valid(validUser));
+        validatorResponse = lengthChecker.valid(validUser);
+        Assert.assertTrue(validatorResponse.isValid());
     }
 
     @Test
     public void validateLength_invalidUser_thenFalse() {
-        Assert.assertFalse(lengthChecker.valid(invalidUser));
+        validatorResponse = lengthChecker.valid(invalidUser);
+        Assert.assertFalse(validatorResponse.isValid());
     }
 
     @Test
     public void validateLength_invalidUser2_thenFalse() {
-        Assert.assertFalse(lengthChecker.valid(invalidUser2));
+        validatorResponse = lengthChecker.valid(invalidUser2);
+        Assert.assertFalse(validatorResponse.isValid());
     }
 
 

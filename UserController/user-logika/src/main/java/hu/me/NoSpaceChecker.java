@@ -2,12 +2,12 @@ package hu.me;
 
 public class NoSpaceChecker implements DataChecker {
 
-    public boolean valid(User user) {
+    public ValidatorResponse valid(User user) {
         if(user.getUserName().contains(" ") || user.getPassword().contains(" ")) {
-            return false;
+            return new ValidatorResponse(false, "Szóközt tartalmazó felhasználónév vagy jelszó");
         }
         else {
-            return true;
+            return new ValidatorResponse(true, "Nincs hiba");
         }
     }
 

@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 public class Controller {
 
-    public void register(User user, ArrayList<DataChecker> checkers, Registration registration, Validator validator) {
+    public void register(User user, ArrayList<DataChecker> checkers, Registration registration, Validator validator, ArrayList<ValidatorResponse> hibak) {
 
         boolean valid;
 
-        valid = validator.makeChecks(user, checkers);
+        valid = validator.makeChecks(user, checkers, hibak);
 
         if(!valid) {
             Log log = new Log(user, "Invalid username");

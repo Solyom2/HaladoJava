@@ -6,11 +6,11 @@ public class Controller {
 
     public void register(User user, ArrayList<DataChecker> checkers, Registration registration, Validator validator, ArrayList<ValidatorResponse> hibak) {
 
-        boolean valid;
+        ArrayList<ValidatorResponse> responses;
 
-        valid = validator.makeChecks(user, checkers, hibak);
+        responses = validator.makeChecks(user, checkers, hibak);
 
-        if(!valid) {
+        if(responses.size() > 0) {
             Log log = new Log(user, "Invalid username");
             log.writeLog();
         }

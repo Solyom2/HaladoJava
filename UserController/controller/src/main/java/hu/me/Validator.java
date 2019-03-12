@@ -4,8 +4,7 @@ import java.util.ArrayList;
 
 public class Validator {
 
-
-    public boolean makeChecks(User user, ArrayList<DataChecker> checkers, ArrayList<ValidatorResponse> hibak) {
+    public ArrayList<ValidatorResponse> makeChecks(User user, ArrayList<DataChecker> checkers, ArrayList<ValidatorResponse> hibak) {
 
         ValidatorResponse valid;
 
@@ -21,10 +20,7 @@ public class Validator {
             System.out.println(validatorResponse.getError());
         }
 
-        if(hibak.size() > 0) {
-            return false;
-        }
-        else return true;
+        return hibak;
     }
 
 }

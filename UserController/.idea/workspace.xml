@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fa03369-90a0-4f04-ba6f-28d294fab6dc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/hu/me/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/hu/me/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/src/main/java/hu/me/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/hu/me/Validator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../calculator-interface/logika-interface/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../calculator-interface/logika-interface/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../calculator-interface/logika/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../calculator-interface/logika/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../calculator-interface/logika/src/main/java/hu/me/Szamologep.java" beforeDir="false" afterPath="$PROJECT_DIR$/../calculator-interface/logika/src/main/java/hu/me/Szamologep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../calculator-interface/logika/src/main/java/hu/me/Szamologep2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../calculator-interface/logika/src/main/java/hu/me/Szamologep2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../calculator-interface/object-mapper-interface/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../calculator-interface/object-mapper-interface/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../calculator-interface/object-mapper-interface/src/main/java/hu/me/InputValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/../calculator-interface/object-mapper-interface/src/main/java/hu/me/InputValues.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../calculator-interface/object-mapper-interface/src/main/java/hu/me/OutputValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/../calculator-interface/object-mapper-interface/src/main/java/hu/me/OutputValues.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../calculator-interface/object-mapper-interface/src/test/java/hu/me/KeresFeldolgozoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../calculator-interface/object-mapper-interface/src/test/java/hu/me/KeresFeldolgozoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../calculator-interface/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../calculator-interface/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-logika/src/main/java/hu/me/LengthChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-logika/src/main/java/hu/me/LengthChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-logika/src/main/java/hu/me/NoSpaceChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-logika/src/main/java/hu/me/NoSpaceChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-logika/src/test/java/hu/me/LengthCheckerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-logika/src/test/java/hu/me/LengthCheckerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-logika/src/test/java/hu/me/NoSpaceCheckerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-logika/src/test/java/hu/me/NoSpaceCheckerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,26 +38,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="13" />
+          <entry key="java" value="20" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="13" />
+          <entry key="JAVA" value="20" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="25" />
-          <entry key="java" value="2321" />
+          <entry key="java" value="2706" />
           <entry key="xml" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2321" />
+          <entry key="JAVA" value="2706" />
           <entry key="PLAIN_TEXT" value="25" />
           <entry key="XML" value="10" />
         </counts>
@@ -70,23 +67,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user-logika/src/main/java/hu/me/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-              <folding>
-                <element signature="e#255#256#0" expanded="true" />
-                <element signature="e#286#287#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user-logika/src/main/java/hu/me/Log.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="238">
+              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
               <folding>
                 <element signature="e#486#487#0" expanded="true" />
                 <element signature="e#556#557#0" expanded="true" />
@@ -98,8 +82,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user-logika/src/main/java/hu/me/Registration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+            <state relative-caret-position="119">
+              <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+              <folding>
+                <element signature="e#134#135#0" expanded="true" />
+                <element signature="e#174#175#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,8 +95,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user-logika/src/main/java/hu/me/Repository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="221">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="e#158#159#0" expanded="true" />
+                <element signature="e#192#193#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,26 +108,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/src/main/java/hu/me/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/src/main/java/hu/me/Validator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+            <state relative-caret-position="255">
+              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/user-logika/src/test/java/hu/me/AppTest.java">
+        <entry file="file://$PROJECT_DIR$/controller/src/main/java/hu/me/Validator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+            <state relative-caret-position="272">
+              <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user-logika/src/main/java/hu/me/NoSpaceChecker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -143,8 +135,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/src/main/java/hu/me/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+            <state relative-caret-position="306">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -186,9 +178,11 @@
         <option value="$PROJECT_DIR$/user-logika/src/main/java/hu/me/CheckerInterface.java" />
         <option value="$PROJECT_DIR$/user-logika/src/main/java/hu/me/DataChecker.java" />
         <option value="$PROJECT_DIR$/user-logika/src/main/java/hu/me/Checker.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/hu/me/Main.java" />
         <option value="$PROJECT_DIR$/user-logika/src/main/java/hu/me/NoSpaceChecker.java" />
         <option value="$PROJECT_DIR$/user-logika/src/main/java/hu/me/LengthChecker.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/hu/me/Main.java" />
+        <option value="$PROJECT_DIR$/user-logika/src/test/java/hu/me/LengthCheckerTest.java" />
+        <option value="$PROJECT_DIR$/user-logika/src/test/java/hu/me/NoSpaceCheckerTest.java" />
         <option value="$PROJECT_DIR$/controller/src/main/java/hu/me/Controller.java" />
         <option value="$PROJECT_DIR$/controller/src/main/java/hu/me/Validator.java" />
       </list>
@@ -324,7 +318,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552403663596" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552404830145" />
     <property name="last_opened_file_path" value="$USER_HOME$/IDEA Projektek" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -333,6 +327,155 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="hu.me" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.gitignore</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/controller/src/main/java/hu/me/Main.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/controller/src/main/java/hu/me/Validator.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/pom.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/bemenet.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/bemenet.yaml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/kimenet.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/logika-interface/src/main/java/hu/me/SzamologepInterface.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/logika/src/main/java/hu/me/Szamologep.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/object-mapper-interface/pom.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/object-mapper-interface/src/main/java/hu/me/Bemenet.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/object-mapper-interface/src/main/java/hu/me/Hibakod.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/object-mapper-interface/src/main/java/hu/me/JSONMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/object-mapper-interface/src/main/java/hu/me/KeresFeldolgozo.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/object-mapper-interface/src/main/java/hu/me/Kimenet.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/object-mapper-interface/src/main/java/hu/me/YAMLMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/object-mapper-interface/src/test/java/hu/me/KeresFeldolgozoTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/pom.xml</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/controller/src/test/java/hu/me/ControllerTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/user-logika/src/test/java/hu/me/LengthCheckerTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/user-logika/src/test/java/hu/me/NoSpaceCheckerTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/auto-kolcsonzo/pom.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/auto-kolcsonzo/src/main/java/hu/me/Auto.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/auto-kolcsonzo/src/main/java/hu/me/Kolcsonzes.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/auto-kolcsonzo/src/main/java/hu/me/exceptions/InvalidNumberPlate.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/auto-kolcsonzo/src/main/java/hu/me/exceptions/SikertelenKolcsonzes.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/kimenet.yaml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/kolcsonzes/pom.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/kolcsonzes/src/main/java/hu/me/AutoKolcsonzo.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/kolcsonzes/src/main/java/hu/me/DijSzamito.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/kolcsonzes/src/test/java/hu/me/KolcsonzesTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/object-mapper-interface/target/test-classes/META-INF/object-mapper-interface.kotlin_module</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/controller/src/test/java/hu/me/AppTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/hu/me/App.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/test/java/hu/me/AppTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/user-logika/src/test/java/hu/me/AppTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/logika/src/main/java/hu/me/Szamologep2.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/object-mapper-interface/src/main/java/hu/me/InputValues.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/object-mapper-interface/src/main/java/hu/me/OutputValues.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../calculator-interface/object-mapper-interface/src/test/java/hu/me/AppTest.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -346,7 +489,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.NoSpaceCheckerTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hu.me.Main" />
       <module name="controller" />
@@ -360,8 +503,61 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LengthCheckerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-logika" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hu.me.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hu.me" />
+      <option name="MAIN_CLASS_NAME" value="hu.me.LengthCheckerTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LengthCheckerTest.validateLength_invalidUser2_thenFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-logika" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hu.me.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hu.me" />
+      <option name="MAIN_CLASS_NAME" value="hu.me.LengthCheckerTest" />
+      <option name="METHOD_NAME" value="validateLength_invalidUser2_thenFalse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoSpaceCheckerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-logika" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hu.me.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hu.me" />
+      <option name="MAIN_CLASS_NAME" value="hu.me.NoSpaceCheckerTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.LengthCheckerTest" />
+      <item itemvalue="JUnit.NoSpaceCheckerTest" />
+      <item itemvalue="JUnit.LengthCheckerTest.validateLength_invalidUser2_thenFalse" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.NoSpaceCheckerTest" />
+        <item itemvalue="JUnit.LengthCheckerTest.validateLength_invalidUser2_thenFalse" />
+        <item itemvalue="JUnit.LengthCheckerTest" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -377,15 +573,30 @@
       <option name="presentableId" value="Default" />
       <updated>1551803426425</updated>
       <workItem from="1551803429782" duration="6749000" />
-      <workItem from="1552403320655" duration="306000" />
+      <workItem from="1552403320655" duration="1961000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="LengthCheckerTest - 2019.03.12 at 16h 20m 01s.xml">
+      <configuration name="LengthCheckerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NoSpaceCheckerTest - 2019.03.12 at 16h 23m 42s.xml">
+      <configuration name="NoSpaceCheckerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LengthCheckerTest_validateLength_invalidUser2_thenFalse - 2019.03.12 at 16h 25m 16s.xml">
+      <configuration name="LengthCheckerTest.validateLength_invalidUser2_thenFalse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NoSpaceCheckerTest - 2019.03.12 at 16h 25m 33s.xml">
+      <configuration name="NoSpaceCheckerTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7055000" />
+    <option name="totallyTimeSpent" value="8710000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25235197" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -396,15 +607,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32972974" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32972974" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4997233" weight="0.32972974" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32972974" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5002767" side_tool="true" weight="0.32972974" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32972974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -446,27 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-logika/src/main/java/hu/me/DataChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-logika/src/main/java/hu/me/LengthChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-logika/src/main/java/hu/me/NoSpaceChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user-logika/src/main/java/hu/me/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -478,10 +668,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-logika/src/main/java/hu/me/Log.java">
+    <entry file="file://$PROJECT_DIR$/user-logika/src/test/java/hu/me/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-logika/src/main/java/hu/me/DataChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-logika/src/main/java/hu/me/LengthChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="80" lean-forward="true" selection-start-line="5" selection-start-column="80" selection-end-line="5" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-logika/src/test/java/hu/me/LengthCheckerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#464#465#0" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#597#598#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+            <element signature="e#803#804#0" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-logika/src/test/java/hu/me/NoSpaceCheckerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding>
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#676#677#0" expanded="true" />
+            <element signature="e#813#814#0" expanded="true" />
+            <element signature="e#882#883#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-logika/src/main/java/hu/me/Registration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <element signature="e#134#135#0" expanded="true" />
+            <element signature="e#174#175#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-logika/src/main/java/hu/me/Repository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#158#159#0" expanded="true" />
+            <element signature="e#192#193#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-logika/src/main/java/hu/me/Log.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
           <folding>
             <element signature="e#486#487#0" expanded="true" />
             <element signature="e#556#557#0" expanded="true" />
@@ -489,24 +750,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-logika/src/main/java/hu/me/Registration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-logika/src/main/java/hu/me/Repository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/src/main/java/hu/me/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+        <state relative-caret-position="306">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -515,22 +762,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/src/main/java/hu/me/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        <state relative-caret-position="255">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-logika/src/main/java/hu/me/NoSpaceChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/src/main/java/hu/me/Validator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-logika/src/test/java/hu/me/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        <state relative-caret-position="272">
+          <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
         </state>
       </provider>
     </entry>

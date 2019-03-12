@@ -7,6 +7,7 @@ public class Controller {
     public void register(User user, ArrayList<DataChecker> checkers, Registration registration, Validator validator) {
 
         boolean valid;
+
         valid = validator.makeChecks(user, checkers);
 
         if(!valid) {

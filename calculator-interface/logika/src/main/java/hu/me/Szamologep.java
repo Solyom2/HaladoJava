@@ -1,22 +1,22 @@
 package hu.me;
 
-public class Szamologep implements SzamologepInterface{
+public class Szamologep{
 
     public Szamologep() {}
 
-    public double osszeadas(double a, double b) {
+    public final int osszeadas(final int a, final int b) {
         return a+b;
     }
 
-    public double kivonas(double a, double b) {
+    public final int kivonas(final int a, final int b) {
         return a-b;
     }
 
-    public double szorzas(double a, double b) {
+    public final int szorzas(final int a, final int b) {
         return a*b;
     }
 
-    public double osztas(double a, double b) {
+    public final int osztas(final int a, final int b) {
         return a/b;
     }
 

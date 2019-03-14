@@ -63,6 +63,9 @@ public class ControllerTest {
         /*Mockito.verify(noSpaceChecker).valid(argument.capture());
         Mockito.verify(lengthChecker).valid(argument.capture());
 
+
+
+
         Assert.assertEquals(argument.getValue().getUserName(), "Solyom2");
         Assert.assertEquals(argument.getValue().getPassword(), "password");*/
     }

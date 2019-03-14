@@ -1,7 +1,9 @@
 package hu.me;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.mockito.ArgumentCaptor;
 import org.mockito.Mockito;
 
 import java.util.ArrayList;
@@ -45,6 +47,24 @@ public class ControllerTest {
     public void register_whenInvalidUser_thenReturnFalse() {
 
         controller.register(invalidUser, checkers, registration, validator, hibak);
+    }
+
+
+    @Test
+    public void controller_validatorArgumentSame_thenTrue() {
+        ValidatorResponse validatorResponse = new ValidatorResponse(true, "Nincs hiba");
+
+        ArgumentCaptor<User> argument = ArgumentCaptor.forClass(User.class);
+
+        Mockito.when(lengthChecker.valid(validUser)).thenReturn(validatorResponse);
+        Mockito.when(noSpaceChecker.valid(validUser)).thenReturn(validatorResponse);
+        registration.mentes(validUser);
+
+        /*Mockito.verify(noSpaceChecker).valid(argument.capture());
+        Mockito.verify(lengthChecker).valid(argument.capture());
+
+        Assert.assertEquals(argument.getValue().getUserName(), "Solyom2");
+        Assert.assertEquals(argument.getValue().getPassword(), "password");*/
     }
 
 }

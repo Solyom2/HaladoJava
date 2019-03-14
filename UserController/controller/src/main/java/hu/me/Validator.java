@@ -8,6 +8,8 @@ public class Validator {
 
         ValidatorResponse valid;
 
+        //squash
+
         for(DataChecker checker : checkers) {
             valid = checker.valid(user);
             if(!valid.isValid()) {

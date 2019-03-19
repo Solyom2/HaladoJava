@@ -9,7 +9,7 @@ import static org.hamcrest.Matchers.is;
 
 public class KeresFeldolgozoTest {
 
-    @Test
+    /*@Test
     public void feldolgoz_WhenEmptyInput_theGiveErrorString() {
         InputValues input = new InputValues();
 
@@ -21,7 +21,7 @@ public class KeresFeldolgozoTest {
         assertThat(eredmeny.getHibakod(), is(Hibakod.URES_BEMENET));
     }
 
-    /*@Test
+    @Test
     public void feldolgoz_WhenEmptyOperator_ThenGiveErrorString() {
         Szamologep2 szamologep = Mockito.mock(Szamologep2.class);
         KeresFeldolgozo keresFeldolgozo = new KeresFeldolgozo(szamologep);

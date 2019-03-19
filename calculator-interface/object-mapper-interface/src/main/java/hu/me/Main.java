@@ -1,13 +1,35 @@
 package hu.me;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 import java.util.Scanner;
 
-public class Main {
+@SpringBootApplication
+public class Main implements CommandLineRunner {
+
+    JSONMapperInterface jsonMapper;
+    YAMLMapperInterface yamlMapper;
+
+    @Autowired
+    public void setJsonMapper(JSONMapper jsonMapper) {
+        this.jsonMapper = jsonMapper;
+    }
+
+    @Autowired
+    public void setYamlMapper(YAMLMapper yamlMapper) {
+        this.yamlMapper = yamlMapper;
+    }
 
     public static void main(String[] args) {
+        SpringApplication app = new SpringApplication(Main.class);
+        app.run(args);
+    }
 
-        JSONMapper jsonMapper = new JSONMapper();
-        YAMLMapper yamlMapper = new YAMLMapper();
+    @Override
+    public void run(String... args) throws Exception {
         Scanner scanner = new Scanner(System.in);
         boolean running = true;
 
@@ -27,9 +49,7 @@ public class Main {
             if(funkcio == 4) {
                 running = false;
             }
-
         }while (running);
-
     }
 
 }

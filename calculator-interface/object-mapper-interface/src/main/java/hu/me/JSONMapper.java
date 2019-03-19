@@ -1,6 +1,7 @@
 package hu.me;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.stereotype.Service;
 
 import java.io.File;
 import java.io.IOException;
@@ -8,7 +9,8 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Scanner;
 
-public class JSONMapper {
+@Service
+public class JSONMapper implements JSONMapperInterface{
 
     private  Szamologep szamologep = new Szamologep();
     private KeresFeldolgozo keresFeldolgozo = new KeresFeldolgozo(szamologep);

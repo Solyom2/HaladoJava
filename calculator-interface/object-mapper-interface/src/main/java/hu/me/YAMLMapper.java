@@ -3,11 +3,13 @@ package hu.me;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SequenceWriter;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
+import org.springframework.stereotype.Service;
 
 import java.io.File;
 import java.io.FileOutputStream;
 
-public class YAMLMapper {
+@Service
+public class YAMLMapper implements YAMLMapperInterface{
 
     private  Szamologep szamologep = new Szamologep();
     private KeresFeldolgozo keresFeldolgozo = new KeresFeldolgozo(szamologep);

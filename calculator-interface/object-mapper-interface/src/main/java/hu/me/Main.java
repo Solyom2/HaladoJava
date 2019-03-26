@@ -11,6 +11,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         boolean running = true;
 
+
         do{
             System.out.println("Válassz működést! 1. Konzol  2. JSON fájl 3. YAML fájl  4. Kilépés: ");
             int funkcio = scanner.nextInt();

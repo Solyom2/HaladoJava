@@ -4,17 +4,25 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
-public class FirstParams {
+public class User {
 
-    //@NotNull
+    @NotNull
     @Min(18)
     int age;
 
-    //@NotNull
-    //@NotEmpty
+    @NotNull
+    @NotEmpty
     String name;
 
+    @NotEmpty
+    @NotNull
     int money;
+
+    public User(@Min(18) int age, String name, int money) {
+        this.age = age;
+        this.name = name;
+        this.money = money;
+    }
 
     public int getAge() {
         return age;
@@ -42,7 +50,7 @@ public class FirstParams {
 
     @Override
     public String toString() {
-        return "FirstParams{" +
+        return "User{" +
                 "age=" + age +
                 ", name='" + name + '\'' +
                 ", money=" + money +

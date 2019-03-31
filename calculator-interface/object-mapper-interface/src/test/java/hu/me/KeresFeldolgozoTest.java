@@ -9,7 +9,7 @@ import static org.hamcrest.Matchers.is;
 
 public class KeresFeldolgozoTest {
 
-    @Test
+    /*@Test
     public void feldolgoz_WhenEmptyInput_theGiveErrorString() {
         InputValues input = new InputValues();
 
@@ -41,6 +41,6 @@ public class KeresFeldolgozoTest {
         OutputValues eredmeny = keresFeldolgozo.feldolgoz(input);
 
         //Assert.assertThat(eredmeny, );
-    }
+    }*/
 
 }

@@ -1,22 +1,25 @@
 package hu.me;
 
-public class Szamologep{
+import org.springframework.stereotype.Service;
+
+@Service
+public class Szamologep implements SzamologepInterface{
 
     public Szamologep() {}
 
-    public int osszeadas(int a, int b) {
+    public double osszeadas(double a, double b) {
         return a+b;
     }
 
-    public int kivonas(int a, int b) {
+    public double kivonas(double a, double b) {
         return a-b;
     }
 
-    public int szorzas(int a, int b) {
+    public double szorzas(double a, double b) {
         return a*b;
     }
 
-    public int osztas(int a, int b) {
+    public double osztas(double a, double b) {
         return a/b;
     }
 

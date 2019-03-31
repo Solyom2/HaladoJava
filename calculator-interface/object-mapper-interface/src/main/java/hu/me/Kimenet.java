@@ -2,38 +2,38 @@ package hu.me;
 
 public class Kimenet {
 
-    private int eredmeny;
+    private double eredmeny;
     private String uzenet;
-    private int hibakod;
+    private Hibakod hibakod;
 
     public Kimenet() {
         this.eredmeny = 0;
         this.uzenet = "nincs";
-        this.hibakod = 0;
+        this.hibakod = Hibakod.NINCS;
     }
 
-    public void setEredmeny(int eredmeny) {
-        this.eredmeny = eredmeny;
-    }
-
-    public void setUzenet(String uzenet) {
-        this.uzenet = uzenet;
-    }
-
-    public void setHibakod(int hibakod) {
-        this.hibakod = hibakod;
-    }
-
-    public int getEredmeny() {
+    public double getEredmeny() {
         return eredmeny;
+    }
+
+    public void setEredmeny(double eredmeny) {
+        this.eredmeny = eredmeny;
     }
 
     public String getUzenet() {
         return uzenet;
     }
 
-    public int getHibakod() {
+    public void setUzenet(String uzenet) {
+        this.uzenet = uzenet;
+    }
+
+    public Hibakod getHibakod() {
         return hibakod;
+    }
+
+    public void setHibakod(Hibakod hibakod) {
+        this.hibakod = hibakod;
     }
 
     @Override

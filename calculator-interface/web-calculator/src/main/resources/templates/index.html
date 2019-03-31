@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Calculator</title>
+</head>
+<body>
+
+<form action="#" method="post" th:object="${input}">
+    Operandus A: <input type="number" th:field="*{a}" th:class="${#fields.hasErrors('a')}? field-error"><br>
+    <p th:if="${#fields.hasErrors('a')}" th:errors="*{a}">A operandus hibás</p><br>
+
+    Operandus B: <input type="number" th:field="*{b}" th:class="${#fields.hasErrors('b')}? field-error"><br>
+    <p th:if="${#fields.hasErrors('b')}" th:errors="*{b}">B operandus hibás</p><br>
+
+    Operator:
+    <select th:field="*{operator}">
+        <option th:value="'+'" th:text="'+'"></option>
+        <option th:value="'-'" th:text="'-'"></option>
+        <option th:value="'*'" th:text="'*'"></option>
+        <option th:value="'/'" th:text="'/'"></option>
+    </select><br>
+
+    <input type="submit" value="Elkuld">
+</form>
+
+<form id = "logs" th:action = "@{/logs}"  method="post">
+    <div>
+        <input type="button" value="Logs"/>
+    </div>
+</form>
+
+</body>
+</html>

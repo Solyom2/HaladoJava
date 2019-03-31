@@ -9,10 +9,13 @@
 <form action="#" method="post" th:object="${user}">
     Nev:<input type="text" th:field="*{name}" th:class="${#fields.hasErrors('name')}? field-error"><br>
     <p th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Hibás név</p><br>
+
     Eletkor:<input type="number" th:field="*{age}" th:class="${#fields.hasErrors('age')}? field-error"><br>
     <p th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Hibás életkor</p><br>
+
     Penzed:<input type="number" th:field="*{money}" th:class="${#fields.hasErrors('money')}? field-error"><br>
     <p th:if="${#fields.hasErrors('money')}" th:errors="*{money}">Hibás életkor</p><br>
+
     <input type="submit" value="Elkuld">
 </form>
 

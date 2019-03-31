@@ -43,7 +43,9 @@ public class CounterController {
         if(bindingResult.hasErrors()) {
             mav.setViewName("index");
         }
-        else mav.setViewName("felnott");
+        else {
+            mav.setViewName("felnott");
+        }
 
         return mav;
     }

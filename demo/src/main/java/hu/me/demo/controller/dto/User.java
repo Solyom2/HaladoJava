@@ -14,7 +14,6 @@ public class User {
     @NotEmpty
     String name;
 
-    @NotEmpty
     @NotNull
     int money;
 

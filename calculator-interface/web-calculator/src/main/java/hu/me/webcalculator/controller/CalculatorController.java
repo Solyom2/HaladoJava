@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.ArrayList;
+
 @Controller
 public class CalculatorController {
 
@@ -45,13 +47,11 @@ public class CalculatorController {
     }
 
     @RequestMapping("/logs")
-    public ModelAndView showLogs(CalculatorService calculatorService, BindingResult bindingResult) {
+    public ModelAndView showLogs() {
         ModelAndView mav = new ModelAndView();
         mav.setViewName("logs");
 
-        System.out.println(calculatorService.getLogs().size());
-
-        //mav.addObject("logs", calculatorService.getLogs().size());
+        mav.addObject("logs", calculatorService.getLogs().toString());
         return mav;
     }
 

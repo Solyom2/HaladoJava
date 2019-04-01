@@ -4,6 +4,7 @@ import hu.me.Szamologep;
 import hu.me.webcalculator.model.Input;
 import hu.me.webcalculator.service.CalculatorServiceInterface;
 import org.springframework.stereotype.Service;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
 
@@ -40,4 +41,8 @@ public class CalculatorService implements CalculatorServiceInterface{
         System.out.println(logs.toString());
     }
 
+    @Override
+    public String toString() {
+        return "logs=" + logs + '}';
+    }
 }

@@ -15,10 +15,7 @@
 
     Operator:
     <select th:field="*{operator}">
-        <option th:value="'+'" th:text="'+'"></option>
-        <option th:value="'-'" th:text="'-'"></option>
-        <option th:value="'*'" th:text="'*'"></option>
-        <option th:value="'/'" th:text="'/'"></option>
+        <option th:each="operator : ${operators}" th:value="${operator}" th:text="${operator}"></option>
     </select><br>
 
     <input type="submit" value="Elkuld">

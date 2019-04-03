@@ -2,6 +2,7 @@ package hu.me.webcalculator.service.impl;
 
 import hu.me.Szamologep;
 import hu.me.webcalculator.model.Input;
+import hu.me.webcalculator.model.Log;
 import hu.me.webcalculator.service.CalculatorServiceInterface;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.ModelAndView;
@@ -12,9 +13,9 @@ import java.util.ArrayList;
 public class CalculatorService implements CalculatorServiceInterface{
 
     private Szamologep szamologep = new Szamologep();
-    private ArrayList<String> logs = new ArrayList<>();
+    private ArrayList<Log> logs = new ArrayList<>();
 
-    public ArrayList<String> getLogs() {
+    public ArrayList<Log> getLogs() {
         return logs;
     }
 
@@ -37,12 +38,10 @@ public class CalculatorService implements CalculatorServiceInterface{
 
     @Override
     public void log(Input input, double eredmeny) {
-        logs.add(input.toString() + " Eredmeny: " + eredmeny);
+        logs.add(new Log(input, eredmeny));
         System.out.println(logs.toString());
     }
 
-    @Override
-    public String toString() {
-        return "logs=" + logs + '}';
-    }
+
+
 }

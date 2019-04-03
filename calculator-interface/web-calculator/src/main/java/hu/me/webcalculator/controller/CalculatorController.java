@@ -1,40 +1,83 @@
 package hu.me.webcalculator.controller;
 
 import hu.me.webcalculator.model.Input;
-import hu.me.webcalculator.service.CalculatorServiceInterface;
 import hu.me.webcalculator.service.impl.CalculatorService;
+import hu.me.webcalculator.service.impl.InputValidator;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.MessageSource;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.InitBinder;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.validation.Valid;
 import java.util.ArrayList;
 
 @Controller
 public class CalculatorController {
 
     private CalculatorService calculatorService;
+    private InputValidator inputValidator;
 
     @Autowired
-    public CalculatorController(CalculatorService calculatorService) {
+    public void setCalculatorService(CalculatorService calculatorService) {
         this.calculatorService = calculatorService;
+    }
+
+    @Autowired
+    public void setInputValidator(InputValidator inputValidator) {
+        this.inputValidator = inputValidator;
+    }
+
+    @ModelAttribute("operators")
+    public ArrayList<String> listOperator() {
+        ArrayList<String> operators = new ArrayList<>();
+        operators.add("+");
+        operators.add("-");
+        operators.add("*");
+        operators.add("/");
+        return operators;
+    }
+
+    @InitBinder("input")
+    public void initBinder(WebDataBinder binder) {
+        binder.setValidator(inputValidator);
+    }
+
+    @Bean
+    public MessageSource messageSource() {
+        ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
+        messageSource.setBasename("classpath:messages");
+        messageSource.setDefaultEncoding("UTF-8");
+        return messageSource;
+    }
+
+    @Bean
+    public LocalValidatorFactoryBean getValidator() {
+        LocalValidatorFactoryBean bean = new LocalValidatorFactoryBean();
+        bean.setValidationMessageSource(messageSource());
+        return bean;
     }
 
     @RequestMapping(method = RequestMethod.GET)
     public ModelAndView showForm() {
         ModelAndView mav = new ModelAndView();
         mav.setViewName("index");
-        mav.addObject("input", new Input(2, 3, "+"));
+        mav.addObject("input", new Input(2, 3, ""));
         return mav;
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public ModelAndView calculate(Input input, BindingResult bindingResult) {
+    public ModelAndView calculate(@ModelAttribute("input") @Valid Input input, BindingResult bindingResult) {
         ModelAndView mav = new ModelAndView();
-
-        System.out.println(input.toString());
 
         if(bindingResult.hasErrors()) {
             mav.setViewName("index");

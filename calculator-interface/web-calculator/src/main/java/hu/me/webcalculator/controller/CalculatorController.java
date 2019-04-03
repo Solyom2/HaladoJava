@@ -47,31 +47,16 @@ public class CalculatorController {
         return operators;
     }
 
-    @InitBinder("input")
+    @InitBinder
     public void initBinder(WebDataBinder binder) {
-        binder.setValidator(inputValidator);
-    }
-
-    @Bean
-    public MessageSource messageSource() {
-        ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
-        messageSource.setBasename("classpath:messages");
-        messageSource.setDefaultEncoding("UTF-8");
-        return messageSource;
-    }
-
-    @Bean
-    public LocalValidatorFactoryBean getValidator() {
-        LocalValidatorFactoryBean bean = new LocalValidatorFactoryBean();
-        bean.setValidationMessageSource(messageSource());
-        return bean;
+        binder.addValidators(inputValidator);
     }
 
     @RequestMapping(method = RequestMethod.GET)
     public ModelAndView showForm() {
         ModelAndView mav = new ModelAndView();
         mav.setViewName("index");
-        mav.addObject("input", new Input(2, 3, ""));
+        mav.addObject("input", new Input(0, 0, ""));
         return mav;
     }
 

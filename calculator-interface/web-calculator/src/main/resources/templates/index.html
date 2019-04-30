@@ -7,6 +7,12 @@
 <body>
 
 <form action="#" method="post" th:object="${input}">
+    User ID: <input type="number" th:field="*{id}" th:class="${#fields.hasErrors('a')}? field-error"><br>
+
+    Nev: <input type="text" th:field="*{nev}" th:class="${#fields.hasErrors('a')}? field-error"><br>
+
+    Eletkor: <input type="number" th:field="*{eletkor}" th:class="${#fields.hasErrors('a')}? field-error"><br>
+
     Operandus A: <input type="number" th:field="*{a}" th:class="${#fields.hasErrors('a')}? field-error"><br>
     <p th:if="${#fields.hasErrors('a')}" th:errors="*{a}">A operandus hibás</p><br>
 

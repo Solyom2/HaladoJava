@@ -53,7 +53,7 @@ public class CalculatorController {
     public ModelAndView showForm() {
         ModelAndView mav = new ModelAndView();
         mav.setViewName("index");
-        mav.addObject("input", new Input(0, 0, ""));
+        mav.addObject("input");
         return mav;
     }
 

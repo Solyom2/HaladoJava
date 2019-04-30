@@ -2,9 +2,7 @@ package hu.me.webcalculator.model;
 
 import hu.me.webcalculator.model.Input;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Log {
@@ -12,11 +10,16 @@ public class Log {
     @Id
     @GeneratedValue
     private Long id;
-    //private Input input;
+
     private double a;
     private double b;
     private String operator;
     private double eredmeny;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+
 
     public Log() {}
 

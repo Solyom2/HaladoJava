@@ -1,17 +1,20 @@
 package hu.me.webcalculator.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.Set;
 
 @Entity
+@Table(name = "user")
 public class User {
 
     @Id
-    @GeneratedValue
     private Long id;
     private String nev;
     private int eletkor;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private Set<Log> logs;
+
 
     public User() {}
 

@@ -3,8 +3,10 @@ package hu.me.webcalculator.service.impl;
 import hu.me.Szamologep;
 import hu.me.webcalculator.model.Input;
 import hu.me.webcalculator.model.Log;
+import hu.me.webcalculator.model.User;
 import hu.me.webcalculator.service.CalculatorServiceInterface;
 import hu.me.webcalculator.service.LogRepository;
+import hu.me.webcalculator.service.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Service;
@@ -20,10 +22,16 @@ public class CalculatorService implements CalculatorServiceInterface{
     private ArrayList<Log> logs = new ArrayList<>();
 
     private LogRepository logRepository;
+    private UserRepository userRepository;
 
     @Autowired
-    public void setCrudRepository(LogRepository logRepository) {
+    public void setLogRepository(LogRepository logRepository) {
         this.logRepository = logRepository;
+    }
+
+    @Autowired
+    public void setUserRepository(UserRepository userRepository) {
+        this.userRepository = userRepository;
     }
 
     public ArrayList<Log> getLogs() {
@@ -36,6 +44,10 @@ public class CalculatorService implements CalculatorServiceInterface{
         double a = input.getA();
         double b = input.getB();
         String operator = input.getOperator();
+
+        int id = input.getId();
+        String nev = input.getNev();
+        int eletkor = input.getEletkor();
 
         switch(operator) {
             case ("+"): eredmeny = szamologep.osszeadas(a,b); log(a, b, operator, eredmeny); // szamologep muvelttel van baj
@@ -56,6 +68,10 @@ public class CalculatorService implements CalculatorServiceInterface{
         System.out.println(logs.toString());*/
         Log log = new Log(a, b, operator, eredmeny);
         logRepository.save(log);
+    }
+
+    public void saveUser(int id, String nev, int eletkor) {
+        //User user = new User(id, nev, eletkor);
     }
 
     public Iterable<Log> findLogs() {

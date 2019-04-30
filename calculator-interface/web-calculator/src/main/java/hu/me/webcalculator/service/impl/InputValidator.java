@@ -33,9 +33,9 @@ public class InputValidator implements Validator {
 
         Input input = (Input) obj;
 
-        ArrayList<Log> logs = calculatorService.getLogs();
+        Iterable<Log> logs = calculatorService.findLogs();
         for(Log log : logs) {
-            if(input.getA() == log.getInput().getA() && input.getB() == log.getInput().getB() && input.getOperator().equals(log.getInput().getOperator())) {
+            if(input.getA() == log.getA() && input.getB() == log.getB() && input.getOperator().equals(log.getOperator())) {
                 err.reject("Ezt a kalkulaciot mar elvegezte");
             }
         }

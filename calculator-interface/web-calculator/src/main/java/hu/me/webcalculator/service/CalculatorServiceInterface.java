@@ -7,6 +7,6 @@ import java.util.ArrayList;
 public interface CalculatorServiceInterface {
 
     double calculate(Input input);
-    void log(Input input, double eredmeny);
+    void log(double a, double b, String operator, double eredmeny);
 
 }

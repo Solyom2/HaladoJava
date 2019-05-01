@@ -70,6 +70,14 @@ public class Log {
         this.eredmeny = eredmeny;
     }
 
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
     @Override
     public String toString() {
         return "Log{" +
@@ -78,6 +86,7 @@ public class Log {
                 ", b=" + b +
                 ", operator='" + operator + '\'' +
                 ", eredmeny=" + eredmeny +
+                ", user=" + user +
                 '}';
     }
 }

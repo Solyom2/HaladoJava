@@ -45,34 +45,36 @@ public class CalculatorService implements CalculatorServiceInterface{
         double b = input.getB();
         String operator = input.getOperator();
 
-        int id = input.getId();
+        Long id = input.getId();
         String nev = input.getNev();
         int eletkor = input.getEletkor();
+        User user = new User(id, nev, eletkor);
 
         switch(operator) {
-            case ("+"): eredmeny = szamologep.osszeadas(a,b); log(a, b, operator, eredmeny); // szamologep muvelttel van baj
-            break;
-            case ("-"): eredmeny = szamologep.kivonas(a,b); log(a, b, operator, eredmeny);
-            break;
-            case ("*"): eredmeny = szamologep.szorzas(a,b); log(a, b, operator, eredmeny);
-            break;
-            case ("/"): eredmeny = szamologep.osztas(a,b); log(a, b, operator, eredmeny);
-            break;
+            case ("+"): eredmeny = szamologep.osszeadas(a,b); log(a, b, operator, eredmeny, user);
+                break;
+            case ("-"): eredmeny = szamologep.kivonas(a,b); log(a, b, operator, eredmeny, user);
+                break;
+            case ("*"): eredmeny = szamologep.szorzas(a,b); log(a, b, operator, eredmeny, user);
+                break;
+            case ("/"): eredmeny = szamologep.osztas(a,b); log(a, b, operator, eredmeny, user);
+                break;
         }
         return eredmeny;
     }
 
     @Override
-    public void log(double a, double b, String operator, double eredmeny) {
-        /*logs.add(new Log(input, eredmeny));
-        System.out.println(logs.toString());*/
+    public void log(double a, double b, String operator, double eredmeny, User user) {
         Log log = new Log(a, b, operator, eredmeny);
+        log.setUser(user);
         logRepository.save(log);
     }
 
-    public void saveUser(int id, String nev, int eletkor) {
-        //User user = new User(id, nev, eletkor);
-    }
+    /*public void saveUser(Long id, String nev, int eletkor) {
+        User user = new User(id, nev, eletkor);
+        System.out.println(user.toString());
+        userRepository.save(user);
+    }*/
 
     public Iterable<Log> findLogs() {
         return logRepository.findAll();
@@ -85,6 +87,5 @@ public class CalculatorService implements CalculatorServiceInterface{
     public List<Log> findByOperator(String operator) {
         return logRepository.findByOperator(operator);
     }
-
 
 }

@@ -15,10 +15,10 @@ public class User {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private Set<Log> logs;
 
-
     public User() {}
 
-    public User(String nev, int eletkor) {
+    public User(Long id, String nev, int eletkor) {
+        this.id = id;
         this.nev = nev;
         this.eletkor = eletkor;
     }
@@ -47,12 +47,22 @@ public class User {
         this.eletkor = eletkor;
     }
 
+    public Set<Log> getLogs() {
+        return logs;
+    }
+
+    public void setLogs(Set<Log> logs) {
+        this.logs = logs;
+    }
+
+
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
                 ", nev='" + nev + '\'' +
                 ", eletkor=" + eletkor +
+                ", logs=" + logs +
                 '}';
     }
 }

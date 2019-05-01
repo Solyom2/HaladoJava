@@ -1,3 +1,4 @@
+
 package hu.me.webcalculator.model;
 
 import javax.validation.constraints.NotEmpty;
@@ -6,7 +7,7 @@ import javax.validation.constraints.PositiveOrZero;
 
 public class Input {
 
-    private int id;
+    private Long id;
     private String nev;
     private int eletkor;
 
@@ -26,7 +27,7 @@ public class Input {
         this.operator = operator;
     }*/
 
-    public Input(int id, String nev, int eletkor, @NotNull int a, @NotNull int b, @NotNull @NotEmpty String operator) {
+    public Input(Long id, String nev, int eletkor, @NotNull int a, @NotNull int b, @NotNull @NotEmpty String operator) {
         this.id = id;
         this.nev = nev;
         this.eletkor = eletkor;
@@ -35,11 +36,11 @@ public class Input {
         this.operator = operator;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -92,3 +93,5 @@ public class Input {
                 '}';
     }
 }
+
+

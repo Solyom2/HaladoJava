@@ -2,6 +2,7 @@ package hu.me.webcalculator.service.impl;
 
 import hu.me.webcalculator.model.Input;
 import hu.me.webcalculator.model.Log;
+import hu.me.webcalculator.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
@@ -9,6 +10,7 @@ import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @Component
 public class InputValidator implements Validator {
@@ -33,7 +35,9 @@ public class InputValidator implements Validator {
 
         Input input = (Input) obj;
 
-        Iterable<Log> logs = calculatorService.findLogs();
+        User user = new User(input.getId(), input.getNev(), input.getEletkor());
+
+        Iterable<Log> logs = calculatorService.findLogsByUser(user);
         for(Log log : logs) {
             if(input.getA() == log.getA() && input.getB() == log.getB() && input.getOperator().equals(log.getOperator())) {
                 err.reject("Ezt a kalkulaciot mar elvegezte");

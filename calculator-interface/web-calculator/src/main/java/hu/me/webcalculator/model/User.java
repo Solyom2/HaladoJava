@@ -1,6 +1,7 @@
 package hu.me.webcalculator.model;
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -11,9 +12,8 @@ public class User {
     private Long id;
     private String nev;
     private int eletkor;
-
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    private Set<Log> logs;
+    @OneToMany(mappedBy = "user")
+    private List<Log> logs;
 
     public User() {}
 
@@ -47,14 +47,13 @@ public class User {
         this.eletkor = eletkor;
     }
 
-    public Set<Log> getLogs() {
+    public List<Log> getLogs() {
         return logs;
     }
 
-    public void setLogs(Set<Log> logs) {
+    public void setLogs(List<Log> logs) {
         this.logs = logs;
     }
-
 
     @Override
     public String toString() {
@@ -62,7 +61,6 @@ public class User {
                 "id=" + id +
                 ", nev='" + nev + '\'' +
                 ", eletkor=" + eletkor +
-                ", logs=" + logs +
                 '}';
     }
 }

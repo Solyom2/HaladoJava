@@ -10,12 +10,10 @@ public class Log {
     @Id
     @GeneratedValue
     private Long id;
-
     private double a;
     private double b;
     private String operator;
     private double eredmeny;
-
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;

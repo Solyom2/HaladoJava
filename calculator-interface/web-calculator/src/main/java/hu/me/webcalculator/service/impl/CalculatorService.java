@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -66,15 +67,22 @@ public class CalculatorService implements CalculatorServiceInterface{
     @Override
     public void log(double a, double b, String operator, double eredmeny, User user) {
         Log log = new Log(a, b, operator, eredmeny);
+        saveUser(user);
         log.setUser(user);
         logRepository.save(log);
     }
 
-    /*public void saveUser(Long id, String nev, int eletkor) {
-        User user = new User(id, nev, eletkor);
-        System.out.println(user.toString());
-        userRepository.save(user);
-    }*/
+    @Transactional
+    public void saveUser(User user) {
+        Optional<User> result = userRepository.findById(user.getId());
+        if (!result.isPresent()) {
+             userRepository.save(user);
+        }
+}
+
+    public List<Log> findLogsByUser(User user) {
+        return logRepository.findByUser(user);
+    }
 
     public Iterable<Log> findLogs() {
         return logRepository.findAll();
